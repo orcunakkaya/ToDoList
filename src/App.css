@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word; /*deneme */
+    border: 1px solid;
+ }
+
+ .App {
+    min-height: 100vh;
+ }
+
+ .dark-theme{
+    background-image: linear-gradient(100deg, #001214, #001f29);
+    height: 100%;
+
+ }
+ .dawn-theme{
+    
+     background-image: linear-gradient(100deg, #6d6f5a, #062e3f);
+     height: 100%;
+ }
+ html, body {
+    height: 100vh;
+  }

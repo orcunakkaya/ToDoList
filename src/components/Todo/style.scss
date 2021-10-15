@@ -1,0 +1,113 @@
+
+#todo{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: auto;
+    .completed-todo{
+        opacity: 0.5;
+    }
+    .todo-dawn-theme{
+        background-image: linear-gradient(100deg, #3d402b, #062e3f);   
+    }
+    .todo-dark-theme{
+        background-color: #01394c;
+    }
+    .todo-container{
+        display: flex;
+        border-radius: 20px;
+        justify-content: space-between;
+
+        .text-todo{
+        height: auto;
+        padding: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 15px;
+        word-wrap: break-word;
+        color: #fff;
+        }
+        .comp {
+            text-decoration:line-through; 
+        }
+        .buttons{
+            align-self: center;
+            .completed-btn{
+                align-self: center;
+                margin: 0 5px;
+                border-radius: 80%;
+                border: none;
+                cursor: pointer;
+            }
+            .completed-btn:hover{
+                box-shadow: white 0 0 8px;
+            }
+            .check-btn-dark-theme{
+                color: #fff;
+                background-color: #002837;
+            }
+            .delete-btn{
+                align-self: center;
+                margin: 0 5px;
+                border-radius: 80%;
+                border: none;
+                cursor: pointer;
+            }
+            .delete-btn:hover{
+                box-shadow: white 0 0 8px;
+            }
+            i{
+                font-size: 1.3em;
+            }
+            .fa-check{
+                font-weight: 900;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .todo-container{
+        width: 92%;
+    }
+    .delete-btn{
+        width: 37px;
+        height: 37px;
+    }
+    .completed-btn{
+        width: 37px;
+        height: 37px;
+    }
+    .text-todo{
+        width: 70%;
+    }
+
+}
+@media only screen and (min-width: 600px) {
+    .todo-container{
+        width: 75%;
+    }
+    .delete-btn{
+        width: 37px;
+        height: 37px;
+    }
+    .completed-btn{
+        width: 37px;
+        height: 37px;
+    }
+    .text-todo{
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .todo-container{
+        width: 65%;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .todo-container{
+        width: 55%;
+    }
+}

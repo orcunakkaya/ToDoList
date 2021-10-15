@@ -1,0 +1,62 @@
+#header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 25vh;
+    color: #fff;
+    .theme-container {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 3%;
+        margin-top: 2%;
+    }
+    .theme{
+        border: 1px solid #fff;
+        width: 38px;
+        border-radius: 100%;
+        height: 38px;
+        margin: 0 8px;
+        cursor: pointer;
+        transition: tranform 150ms ease-in-out, box-shadow 200ms ease-in-out;  
+    }
+    .theme:hover{
+        box-shadow: white 0 0 8px;;
+    }
+    .title {
+        margin-top: 2rem;
+        text-align: center;
+        letter-spacing: 0.4rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 3rem;
+    }
+    .theme-container {
+        align-self: center;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .title {
+        font-size: 4rem;
+    }
+    .theme-container {
+        align-self: center;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .title {
+        font-size: 5rem;
+    }
+    .theme-container {
+        align-self: center;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .title {
+        font-size: 6rem;
+    }
+    .theme-container {
+        align-self: flex-end;
+    }
+}
